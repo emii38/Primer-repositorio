@@ -1,10 +1,53 @@
 *{
     background-color: aquamarine;
 }
+header h1 {
+    display: grid;
+    justify-content: center;
+    animation-duration: 3s;
+    animation-name: h1;
+    box-shadow: 0 0 10px black;
+}
+
 main section {
     display: grid;
     justify-content: center;
     margin: 100px;
     padding: 50px;
     box-shadow: 0 0 15px black;
+    animation-duration: 4s;
+    animation-name: section;
+
+
 }
+main section:hover {
+    background-color: rgba(13, 255, 0, 0.968);
+
+}
+footer{
+    display:grid;
+    justify-content: center;
+    animation-duration: 5s;
+    animation-name: footer;
+    box-shadow: 0 0 10px black;
+}
+@keyframes section {
+  from {
+    margin-top: 200%;
+  }  
+ 
+}
+@keyframes h1 {
+    from {
+      margin-left: 200%;
+      width: 300%;
+    }  
+   
+  }
+  @keyframes footer {
+    from {
+      margin-right: 10000%;
+      
+    }  
+   
+  }
